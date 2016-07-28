@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dados do protocolo</title>
+</head>
+<body>
+
+<label>Protocolo</label><br>
+Número: {{numero}} Situaçao: {{status_protocolo}} Interessado: {{interessado}} <br>
+Justificativa: {{justificativa}} <br>
+
+<br><label>Histórico</label><br>
+    <table border="1">
+        <td>Status</td> <td>Data</td> <td>Origem</td> <td>Destino</td>
+        {% for p in numProtocolo %}
+        <tr>
+            <td>{{p.status}}</td> <td>{{p.data_disponibilizacao}}</td> <td>{{p.origem}}</td> <td>{{p.destino}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>

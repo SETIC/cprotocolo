@@ -1,0 +1,4 @@
+Django==1.9.6
+python-decouple==3.0
+requests==2.10.0
+uWSGI==2.0.13.1

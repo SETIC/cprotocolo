@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conculta de protocolos</title>
+</head>
+<body>
+<form name="protocolo" method="GET" action="{% url 'protocolo' %}">
+    <label>Consulta de protocolos</label><br>
+    <input type="text" name="numProtocolo" class="form-control">
+    <input type="submit" value="Consultar">
+
+    <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+    </div>
+
+</form>
+</body>
+</html>
+
